@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <title>The Basic Language of the Web: HTML</title>
+    <link href="style.css" rel="stylesheet" />
   </head>
 
   <body>
-    <header>
+    <header class="main-header">
       <h1>📘 The Code Magazine</h1>
 
       <nav>
@@ -27,7 +28,7 @@
           height="50"
         />
 
-        <p>
+        <p id="author">
           Posted by <strong> Laura Jones </strong> on Monday, June 21st 2027
         </p>
 
@@ -57,9 +58,11 @@
         use to structure and describe the content of a webpage (not a
         programming language).
       </p>
-      HTML consists of elements that describe different types of content:
-      paragraphs, links, headings, images, video, etc. Web browsers understand
-      HTML and render HTML code as websites.
+      <p>
+        HTML consists of elements that describe different types of content:
+        paragraphs, links, headings, images, video, etc. Web browsers understand
+        HTML and render HTML code as websites.
+      </p>
 
       <p>In HTML, each element is made up of 3 parts:</p>
       <ol>
@@ -93,24 +96,26 @@
     </article>
     <aside>
       <h4>Related posts</h4>
-      <ul>
+      <ul class="related-author-list">
         <li>
           <img src="img/related-1.jpg" alt="Person" width="75" height="75" />
           <a href="#" target="_blank">How to Learn Web Development</a>
-          <p>By Jonas Schmedtmann</p>
+          <p class="related-author">By Jonas Schmedtmann</p>
         </li>
         <li>
           <img src="img/related-2.jpg" alt="Lightning" width="75" height="75" />
           <a href="#" target="_blank">The Unknown Powers of CSS</a>
-          <p>By Jim Dillon</p>
+          <p class="related-author">By Jim Dillon</p>
         </li>
         <li>
           <img src="img/related-3.jpg" alt="Code" width="75" height="75" />
           <a href="#" target="_blank">Why JavaScript is Awesome</a>
-          <p>By Matilda</p>
+          <p class="related-author">By Matilda</p>
         </li>
       </ul>
     </aside>
-    <footer><p>Copyright &copy; 2027 by The Code Magazine.</p></footer>
+    <footer>
+      <p id="copyright">Copyright &copy; 2027 by The Code Magazine.</p>
+    </footer>
   </body>
 </html>
